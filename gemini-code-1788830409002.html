@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Recommendation</title>
+    <!-- 외부 CSS 스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎵 My Favorite Music</h1>
+
+    <div class="menu-container">
+        <!-- 메인 장르 버튼 -->
+        <button class="main-btn" id="mainGenreBtn">[장르]</button>
+        
+        <!-- 하위 장르 버튼 목록 -->
+        <div class="sub-buttons" id="subButtons">
+            <button class="genre-btn" data-genre="kpop">[K-POP]</button>
+            <button class="genre-btn" data-genre="pop">[POP]</button>
+            <button class="genre-btn" data-genre="chill">[잔잔한 음악]</button>
+            <button class="genre-btn" data-genre="funk">[Funk]</button>
+        </div>
+    </div>
+
+    <!-- 노래 목록 및 플레이어가 출력되는 영역 -->
+    <div class="song-list" id="songList">
+        <div class="empty-msg">[장르] 버튼을 눌러 들어보고 싶은 음악을 선택해보세요!</div>
+    </div>
+
+    <!-- 외부 JS 스크립트 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
